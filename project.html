@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>        
+        .bio, .mo, .emailadd,.yourgender,.country,#remember{
+            text-indent: 2em;/*it give spaces b/w text */
+            font-family: monospace;
+            font-size:larger;
+        }
+        input[type=text] ,[ type="email"]{
+        width: 15%;
+        }
+        .cnty{
+            font-family: monospace;
+            font-size:larger;
+            cursor: grab;
+            border-radius: 10px;
+        }
+        .help{             
+            padding-left: 90%;
+        }
+        .sbmt{
+            border: 2px solid;
+            border-radius: 20pt;
+            text-align: center;
+            cursor: pointer;  
+            margin-left: 46%;          
+            width: 10%;
+            font-family:cursive;
+            font-size:small;
+        }
+        /* hover :- we can change propety when we move out cursor on it example are as given */
+        .sbmt:hover{
+            background-color: aqua;
+        }
+        .country{
+            padding-left: 2em;
+        }
+        .fm{
+            border: 1vh  yellow;
+            border-width: 10%;            
+            border-style:outset;
+            background-color:skyblue;
+            width: 70%;
+            position:absolute;
+            top: 10%;
+            left: 15%;
+        }
+        .image{ 
+            text-align: center; 
+            
+        }
+        .myimg{  
+            width: 10%; border-radius: 30pt;
+        }
+        .yourgender{
+            cursor:pointer;
+            padding-left: 2em;/* it give spaces in rodio or select types of input*/
+        }
+        .h{
+            color: rgb(255, 136, 0);
+            border-width: 3px; /* in this we are increasing or decreasing the width of border */
+            text-align: center;
+            border-radius: 30pt;
+        } 
+
+    </style>
+</head>
+<body >    
+    <form action="h.php" class="fm">
+        <h1 class="h">Student Registraton Form</h1>
+
+        <div class="image">
+            <img src="https://www.cdgi.edu.in/images/con_logo2.png" alt="Login" class="myimg" >
+        </div>
+                    <!-- Names -->
+        <div class="bio">
+            <label for="name">  Name </label>
+            <input type="text" name="myname" placeholder="Enter Name" id="name" required>
+
+            <label for="eno">Enrolement No.</label>
+             <input type="text" placeholder="Enter here" name="en" id="enumber" required>
+        </div>
+        <br>        
+                    <!-- phone number -->
+        <div class="mo">
+            <label for="ph">Ph.No</label>
+            <input type="text" placeholder="Enter No" name="myph" required>
+            
+            <label for="mymo">Father Ph.No</label>
+            <input type="text" placeholder="Enter No" name="mytele" id="mymo">
+        </div>
+        <br>
+                    <!-- Email & address -->
+        <div  class="emailadd">
+            <label for="email" id="gmail" >email</label>
+            <input type="email" placeholder="Enter email" name="myemail" required>
+            
+            <label for="add">Address</label>
+            <input type="text" placeholder="Enter address" name="Address" id="add" required>
+            <input type="text" placeholder="State" name="Address" id="add" required>
+            <input type="text" placeholder="PIN CODE" name="Address" id="add" required>
+        </div>
+        <br>
+                    <!-- Gender -->
+        <div   >
+            <label for="gender" class="yourgender" >Gender    
+                Male <input type="radio" name="male" id="g"> Female <input type="radio" name="male" id="gender"> Other<input type="radio" name="male" id="gnd" required>
+            </label>
+        </div>        
+                    <!-- Country -->
+        <div class="country" >
+            <br>
+            <label for="cnuty">Courses</label>
+            <select name="mycnty"  class="cnty">
+                <option value="In" >DSA</option>
+                <option value="Ja">DBMS</option>
+                <option value="Ne">OOP</option>  
+                <option value="ce">C++</option>  
+                <option value="me">JAVA</option>  
+                <option value="csit">PYTHON</option>  
+            </select>        
+        </div>
+                    <!-- Submit -->
+        <br>
+            <input type="button" value="Submit" class="sbmt">
+        </div>
+        <br><br>
+                    <!-- Remember and Help -->
+        <span  id="remember " >
+            <input  id="remember " type="checkbox" name="name" required ><label for="name"> Remember Me</label>
+            <a href="http://google.com" target="_private" class="help" > Help </a>
+            <br><br>
+        </span>    
+    </form>
+</body>
+
+</html>
